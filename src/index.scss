@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Nunito Sans', sans-serif;
+  .user{
+    fill:none;
+    stroke:#000000;
+    stroke-width: 2.5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+  }
+  &.dark{
+    .user{
+      stroke: #fff !important;
+    }
+  }
+}
+
+
+.light{
+  background-color: #ECE7E3;
+  color: #000000;
+  fill: #000;
+}
+
+.dark{
+  background-color: #222222;
+  color: #ffffff;
+  fill: #fff;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
