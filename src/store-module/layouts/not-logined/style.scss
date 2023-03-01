@@ -1,0 +1,7 @@
+.is-logined{
+    transition: 0.35s linear all;
+    &:hover{
+        color: #fcc900;
+        transition: 0.35s linear all;
+    }
+}

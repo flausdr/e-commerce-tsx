@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Personal from './personality';
 import Language from './language';
 import Theme from './theme';
@@ -12,10 +14,12 @@ const Header = () => {
                 <Language />
             </div>
             
-            <h1 className='basis-2/5 flex justify-start pl-10 text-5xl font-semibold'>
-                <Bird width={25} height={25} className='-top-1 -left-2 relative' />
-                M13
-            </h1>
+            <Link to='/' className='basis-2/5'>
+                <h1 className='pl-10 text-5xl font-semibold flex justify-start'>
+                    <Bird width={25} height={25} className='-top-1 -left-2 relative' />
+                    M13
+                </h1>
+            </Link>
 
             <Personal />
         </div>
