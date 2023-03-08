@@ -7,15 +7,15 @@ import { ReactComponent as Likes } from '../../../assets/heart.svg';
 const Personal = () => {
     return (
         <div className='flex basis-2/5 justify-end pr-16'>
-            <div className='flex ml-16'>
-                <Link to='/my-account'>
+            <div className='flex ml-16 gap-x-5'>
+                <Link to='/sign-in'>
                     <Cabinet width='30px' height='30px' className='cursor-pointer user' />
                 </Link>
                 <Link to='/wishlist'>
-                    <Likes width='30px' height='30px' className='ml-5 cursor-pointer' />
+                    <Likes width='30px' height='30px' className='cursor-pointer' />
                 </Link>
                 <Link to='/cart'>
-                    <Cart width='30px' height='30px' className='ml-5 cursor-pointer' />
+                    <Cart width='30px' height='30px' className='cursor-pointer' />
                 </Link>
             </div>
         </div>
