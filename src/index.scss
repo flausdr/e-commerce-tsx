@@ -25,6 +25,10 @@ body {
   }
 }
 
+*:focus{
+  outline: 1px solid #cccccc;
+}
+
 
 .light{
   background-color: #ECE7E3;
